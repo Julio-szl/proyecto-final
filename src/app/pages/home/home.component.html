@@ -1,1 +1,234 @@
-<p>home works!</p>
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="user" viewBox="0 0 448 512">
+    <path
+      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z">
+    </path>
+  </symbol>
+  <symbol id="play" viewBox="0 0 384 512">
+    <path
+      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
+    </path>
+  </symbol>
+  <symbol id="proyectos" viewBox="0 0 640 512">
+    <path
+      d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z">
+    </path>
+  </symbol>
+  <symbol id="tareas" viewBox="0 0 384 512">
+    <path
+      d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z">
+    </path>
+  </symbol>
+</svg>
+<nav [class.scrolled]="scrolled">
+  <div class="container">
+    <a class="brand" [routerLink]="['/']">Intr. Sistemas de Cómputo</a>
+    <ul class="nav nav-links">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" [routerLink]="['/proyectos']" routerLinkActive="active">Proyectos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" [routerLink]="['/tareas']" routerLinkActive="active">Tareas
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/videos']" routerLinkActive="active">Videos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/acerca']" routerLinkActive="active">Integrantes
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="header">
+  <div class="header-background" style="background-image: url('assets/images/home.gif');">
+  </div>
+  <div class="header-content">
+    <h1 class="title-header">Proyecto Final</h1>
+    <p class="description-header">Introducción a los Sistemas de Cómputo</p>
+  </div>
+</header>
+
+<body>
+
+  <div class="container about">
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-1 fw-bold fs-1">Nuestro paso por el curso</h2>
+      <p class="fs-5">Este curso de Introducción a los Sistemas de Cómputo ha sido mucho más que una simple asignatura:
+        ha sido nuestro primer paso en el mundo de la tecnología y el comienzo de lo que, para muchos de nosotros, será
+        una carrera llena de desafíos y aprendizajes.
+
+        Hoy, culminando el semestre, podemos decir con orgullo que dimos nuestro primer gran paso en el campo de la
+        informática. Sabemos que el camino por delante es largo y exigente, pero esta experiencia nos ha dado las bases
+        y la confianza para seguir avanzando.
+
+        A nuestros compañeros e ingeniera: ¡gracias por ser parte de este aprendizaje! Y a nosotros mismos:
+        ¡felicitaciones por este logro! Que este sea solo el inicio de una trayectoria llena de crecimiento y éxito.
+      </p>
+      <p class="fs-5">En esta sección encontraran las distintas actividades realizadas durante el curso</p>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#proyectos" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Proyectos</h3>
+            <p>Proyectos desarrollados durante el curso.
+            </p>
+            <a [routerLink]="['/proyectos']" class="btn btn-outline-success">
+              Proyectos
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#tareas" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Tareas</h3>
+            <p>Tareas desarrolladas durante el curso.</p>
+            <a [routerLink]="['/tareas']" class="btn btn-outline-success">
+              Tareas
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div
+            class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#play" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Videos</h3>
+            <p>Videos desarrollados durante el curso.</p>
+            <a [routerLink]="['/videos']" class="btn btn-outline-success">
+              Videos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="integrantes px-4" id="featured-3">
+    <div class="container">
+      <div class="pb-5">
+        <img src="assets\icons\favicon.svg" class="pb-1" alt="logo-grupo" width="80" height="80">
+        <h1 class="title-integrantes">Sobre nuestro grupo</h1>
+        <p class="description-integrantes">¡Bienvenidos a la presentación de nuestro grupo de trabajo del curso
+          Introducción a los
+          Sistemas
+          de Cómputo!
+
+          A lo largo de este curso, hemos explorado los fundamentos esenciales de la informática, abarcando temas clave
+          como el mantenimiento de equipo de cómputo, donde aprendimos sobre hardware, ensamble y cuidado de los
+          componentes. También nos adentramos en los conceptos básicos de programación, enfocándonos en HTML para
+          entender
+          la estructura de páginas web, y revisamos los principios de bases de datos, esenciales para el manejo de
+          información. Además, dimos nuestros primeros pasos en el mundo de las redes de computadoras, conociendo su
+          importancia y funcionamiento en la conectividad moderna.
+
+          En esta página, compartiremos los conocimientos adquiridos, las experiencias prácticas y los retos superados
+          durante el curso. ¡Esperamos que esta página sea informativa y refleje el esfuerzo colaborativo de nuestro
+          grupo!
+
+          ¡Comencemos!
+        </p>
+        <a class="text-decoration-none" href="https://www.youtube.com/" target="_blank">
+          <button type="button" class="btn btn-outline-light fs-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393">
+              </path>
+            </svg>
+            Video de Presentación
+          </button>
+        </a>
+      </div>
+      <div class="pt-5 row g-4 py-2 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center border border-light fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em" fill="white">
+              <use xlink:href="#user" />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-light">Kenneth Zet</h3>
+          <p class="text-secondary">Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez
+            de Guatemala, les
+            presentamos nuestro proyecto final</p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center border border-light fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em" fill="white">
+              <use xlink:href="#user" />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-light">Julio Sánchez</h3>
+          <p class="text-secondary">Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez
+            de Guatemala, les
+            presentamos nuestro proyecto final</p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center border border-light fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em" fill="white">
+              <use xlink:href="#user" />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-light">Daniel Coroxón</h3>
+          <p class="text-secondary">Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez
+            de Guatemala, les
+            presentamos nuestro proyecto final</p>
+        </div>
+      </div>
+      <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center border border-light fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em" fill="white">
+              <use xlink:href="#user" />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-light">Esdras Tuy</h3>
+          <p class="description-int text-secondary">Estudiantes de la carrera de Ingeniería en Sistemas de la
+            Universidad Mariano Gálvez de Guatemala, les
+            presentamos nuestro proyecto final</p>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center border border-light fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em" fill="white">
+              <use xlink:href="#user" />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-light">Jairo Pérez</h3>
+          <p class="description-int text-secondary">Estudiantes de la carrera de Ingeniería en Sistemas de la
+            Universidad Mariano Gálvez de Guatemala, les
+            presentamos nuestro proyecto final</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="carrusel-app">
+    <app-carousel></app-carousel>
+  </div>
+</body>

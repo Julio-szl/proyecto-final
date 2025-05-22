@@ -1,114 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-  <symbol id="user" viewBox="0 0 448 512">
-    <path
-      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z">
-    </path>
-  </symbol>
-  <symbol id="play" viewBox="0 0 384 512">
-    <path
-      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
-    </path>
-  </symbol>
-</svg>
-<nav [class.scrolled]="scrolled">
-  <div class="container">
-    <a class="brand" [routerLink]="['/']">Intr. Sistemas de Cómputo</a>
-    <ul class="nav-links">
-      <li class="">
-        <a aria-current="page" [routerLink]="['/']" routerLinkActive="active">Inicio
-        </a>
-      </li>
-      <li class="">
-        <a [routerLink]="['/integrantes']" routerLinkActive="active">Integrantes
-        </a>
-      </li>
-      <li class="">
-        <a [routerLink]="['/acerca']" routerLinkActive="active">Acerca de
-        </a>
-      </li>
-    </ul>
-  </div>
+<nav>
+    <div class="container">
+        <a class="brand" [routerLink]="['/']">Intr. Sistemas de Cómputo</a>
+        <ul class="nav nav-links">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/proyectos']"
+                    routerLinkActive="active">Proyectos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/tareas']" routerLinkActive="active">Tareas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/videos']" routerLinkActive="active">Videos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/acerca']" routerLinkActive="active">Integrantes
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
-
-<header class="header">
-  <div class="header-background" style="background-image: url('assets/images/home.gif');">
-  </div>
-  <div class="header-content">
-    <h1 class="title-header">Proyecto Final</h1>
-    <p class="description-header">Introducción a los Sistemas de Cómputo</p>
-  </div>
-</header>
-
-<body>
-  <div class="container integrantes px-4" id="featured-3">
-    <div class="pb-5">
-      <h1 class="title-integrantes">Integrantes del Grupo</h1>
-      <p class="fs-4">Nuestro grupo del curso les presenta a los integrantes asi como nuestro proyecto final de
-        curso
-      </p>
-      <a href="" type="button"
-        class="video btn btn-outline-dark btn-lg d-inline-flex flex-column align-items-center">
-        <svg class="bi" width="1em" height="1em" fill="currentColor">
-          <use xlink:href="#play" />
-        </svg>
-        <p class="px-2">Video Introductorio</p>
-      </a>
-    </div>
-    <div class="pt-5 row g-4 py-2 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center border border-dark fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#user" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Kenneth Zet</h3>
-        <p>Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala, les
-          presentamos nuestro proyecto final</p>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center border border-dark fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#user" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Julio Sánchez</h3>
-        <p>Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala, les
-          presentamos nuestro proyecto final</p>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center border border-dark fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#user" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Daniel Coroxón</h3>
-        <p>Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala, les
-          presentamos nuestro proyecto final</p>
-      </div>
-    </div>
-    <div class="row g-4 py-2 row-cols-1 row-cols-lg-2">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center border border-dark fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#user" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Esdras Tuy</h3>
-        <p class="px-5 text-align-justify">Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano
-          Gálvez de Guatemala, les
-          presentamos nuestro proyecto final</p>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center border border-dark fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#user" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Jairo Pérez</h3>
-        <p class="px-5 text-align-justify">Estudiantes de la carrera de Ingeniería en Sistemas de la Universidad Mariano
-          Gálvez de Guatemala, les
-          presentamos nuestro proyecto final</p>
-      </div>
-    </div>
-  </div>
-</body>
