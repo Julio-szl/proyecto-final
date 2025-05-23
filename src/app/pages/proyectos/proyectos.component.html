@@ -1,0 +1,376 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="logo" viewBox="0 0 640 512">
+        <path
+            d="M372.2 52c0 20.9-12.4 39-30.2 47.2L448 192l102.2-20.4 2.2-.4c-5.3-7.7-8.4-17.1-8.4-27.1c0-26.5 21.5-48 48-48s48 21.5 48 48c0 26-20.6 47.1-46.4 48l-9.8 21.8L481 442.3c-10.3 23-33.2 37.7-58.4 37.7l-205.2 0c-25.2 0-48-14.8-58.4-37.7L56.2 213.8 46.4 192C20.6 191.1 0 170 0 144c0-26.5 21.5-48 48-48s48 21.5 48 48c0 10.1-3.1 19.4-8.4 27.1l2.2 .4L192 192 298.1 99.1c-17.7-8.3-30-26.3-30-47.1c0-28.7 23.3-52 52-52s52 23.3 52 52zm44.2 176.1L320 143.8l-96.4 84.3c-11.2 9.8-26.4 13.9-41 10.9L114 225.4l88.7 197.2c2.6 5.7 8.3 9.4 14.6 9.4l205.2 0c6.3 0 12-3.7 14.6-9.4L526 225.4l-68.5 13.7c-14.6 2.9-29.8-1.1-41-10.9z" />
+    </symbol>
+</svg>
+
+<nav>
+    <app-nav></app-nav>
+</nav>
+
+<div class="cover-container">
+    <header class="header">
+        <div class="header-swiper">
+            <swiper-container autoplay="true" delay="3000" scrollbar="true" effect="fade" loop="true">
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/final_1.png" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/final_2.png" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/final_3.png" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/lan_1.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/lan_2.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/lan_3.png" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/mant_1.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/mant_2.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/mant_3.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/maq_1.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/maq_2.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+                <swiper-slide>
+                    <img class="img-proyecto" src="assets/images/proyectos/maq_3.jpg" alt="imagen 1" />
+                </swiper-slide>
+
+            </swiper-container>
+        </div>
+
+        <div class="header-content">
+            <h1 class="title-header lead">Proyectos</h1>
+            <p class="description-header lead">En esta sección podrás encontrar los proyectos que se han ido
+                desarrollando durante el semestre, es de nuestro agrado compartirlos con los compañeros del
+                curso y que puedan llevarse una distinta perspectiva sobre los proyectos desarrollados.
+            </p>
+            <p class="description-header lead">Pulsa el botón para ir a los proyectos</p>
+            <p class="lead">
+                <a (click)="scrollTo('proyectos')" class="btn btn-lg btn-light fw-bold border-white bg-white">Ver
+                    proyectos</a>
+            </p>
+        </div>
+    </header>
+</div>
+
+<section id="proyectos">
+    <div class="dialog">
+        <ng-template #content let-observer>
+            <div class="buttons">
+                <button size="m" tuiButton type="button" (click)="observer.complete()">
+                    Regresar
+                </button>
+            </div>
+        </ng-template>
+
+        <ng-template #mantenimiento>
+            <div class="header-cards">
+                <swiper-container loop="true" effect="fade" navigation="true" parallax="true">
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/proyectos/mant_1.jpg');">
+                            <div class="custom-title-dialog" data-swiper-parallax="-400">
+                                Mantenimiento de Computadoras
+                            </div>
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                <p>El lago Atitlán es el lago más profundo de Centro América y el segundo más grande
+                                    de
+                                    Guatemala. Su parte más profunda se encuentra a 340 metros aproximadamente,
+                                    mientras la profundidad media es de 220 metros. Es una importante fuente
+                                    económica
+                                    del Departamento de Sololá, donde queda ubicado, así como un centro turístico de
+                                    gran interés comercial. El lago de Atitlán es reconocido como uno de los lagos
+                                    más
+                                    bellos del planeta Tierra y es una de las atracciones turísticas nacionales e
+                                    internacionales más importantes de toda Guatemala. El explorador y naturalista
+                                    alemán Alexander von Humboldt lo llamó "el lago más hermoso del mundo</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/images/proyectos/mant_2.jpg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                El lago Atitlán es un lago de origen volcánico tipo caldera. Tiene una larga y
+                                compleja
+                                historia de formación, pues antes del lago que actualmente se ve existieron otras
+                                calderas previas. Se puede hablar de la formación del lago Atitlán en tres ciclos de
+                                crecimiento estratovolcánico, erupciones silíceas y formación y relleno de calderas.
+                                La
+                                caldera Atitlán I se formó hace 14-11 millones de años, Atitlán II entre 10-8
+                                millones
+                                de años, y la actual caldera Atitlán III se formó hace aproximadamente 84 000 años
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/images/proyectos/mant_3.jpg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                El lago Atitlán es el lago más profundo de Centro América y el segundo más grande de
+                                Guatemala. Su parte más profunda se encuentra a 340 metros aproximadamente,
+                                mientras la profundidad media es de 220 metros. Es una importante fuente económica
+                                del Departamento de Sololá, donde queda ubicado, así como un centro turístico de
+                                gran interés comercial. El lago de Atitlán es reconocido como uno de los lagos más
+                                bellos del planeta Tierra y es una de las atracciones turísticas nacionales e
+                                internacionales más importantes de toda Guatemala. El explorador y naturalista
+                                alemán Alexander von Humboldt lo llamó "el lago más hermoso del mundo
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </ng-template>
+
+        <ng-template #maq_virtual>
+            <div class="header-cards">
+                <swiper-container loop="true" effect="fade" navigation="true" parallax="true" crossFade="true">
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/semuc/1.jpg');">
+                            <div class="custom-title-dialog" data-swiper-parallax="-400">
+                                Semuc Champey
+                            </div>
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                <p>En el dialecto maya local, Semuc Champey significa “donde el río se esconde bajo
+                                    la
+                                    tierra”. Es porque, precisamente, el Cahabón se oculta por una sucesión de
+                                    cavidades, se entuba, gana presión y aparece como un chorro blanco y potente al
+                                    cabo
+                                    de unas decenas de metros.</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/semuc/2.jpg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                El espacio natural está gestionado para facilitar la visita pero ser lo menos
+                                invasivo
+                                posible con el entorno. Así, el magnífico mirador camuflado en la selva requiere una
+                                buena ascensión de más de media hora por unas pasarelas y escalinatas bien
+                                acondicionadas pero que exigen esfuerzo en la sofocante selva. Desde allí se tiene
+                                una
+                                visión panorámica de la serie de pozas, una sucesión de azules y verdes
+                                maravillosos.
+                                Después, se suele bajar hasta el mismo curso, donde se autoriza el baño en
+                                prácticamente
+                                todas las pozas excepto en las que se hallan demasiado cerca del sumidero (nadie
+                                quiere
+                                que un turista desaparezca bajo tierra y aparezca ahogado en el extremo opuesto).
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/semuc/3.jpeg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                El espacio natural está gestionado para facilitar la visita pero ser lo menos
+                                invasivo
+                                posible con el entorno. Así, el magnífico mirador camuflado en la selva requiere una
+                                buena ascensión de más de media hora por unas pasarelas y escalinatas bien
+                                acondicionadas pero que exigen esfuerzo en la sofocante selva. Desde allí se tiene
+                                una
+                                visión panorámica de la serie de pozas, una sucesión de azules y verdes
+                                maravillosos.
+                                Después, se suele bajar hasta el mismo curso, donde se autoriza el baño en
+                                prácticamente
+                                todas las pozas excepto en las que se hallan demasiado cerca del sumidero (nadie
+                                quiere
+                                que un turista desaparezca bajo tierra y aparezca ahogado en el extremo opuesto).
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </ng-template>
+
+        <ng-template #red_lan>
+            <div class="header-cards">
+                <swiper-container loop="true" effect="fade" navigation="true" parallax="true" crossFade="true">
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/antigua/1.jpg');">
+                            <div class="custom-title-dialog" data-swiper-parallax="-400">
+                                Antigua Guatemala
+                            </div>
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                <p>La Antigua fue la segunda capital de la Capitanía General de Guatemala, fundada
+                                    el 16
+                                    de marzo de 1543 en el Valle de Panchoy, en las faldas del Volcán de Agua.
+                                    Una primera ciudad permanente se había establecido en el Valle de Almolonga el
+                                    22 de
+                                    noviembre de 1527 (hoy San Miguel Escobar).
+                                    Mientras que la fundación de Santiago, por el conquistador Pedro de Alvarado, el
+                                    25
+                                    de julio de 1524 en Iximché (Tecpán), corresponde únicamente a la instalación de
+                                    un
+                                    cuartel general; llamada así por advocación al apóstol Santiago que se celebra
+                                    ése
+                                    día.</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/antigua/2.jpg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                Construida en el Valle de Panchoy a 1,500 metros sobre el nivel del mar, la ciudad
+                                de La
+                                Antigua ha sido a través del tiempo una zona vulnerable a los movimientos sísmicos,
+                                con
+                                más veinte terremotos registrados entre 1565 y 1773.
+                                Pero finalmente quedó destruida por el de Santa Marta el 29 de julio de 1773.
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="carrusel-dialog"
+                            style="background-image: url('assets/images/destinos/antigua/3.jpg');">
+                            <div class="custom-text-dialog" data-swiper-parallax="-400"
+                                data-swiper-parallax-duration="600">
+                                Con diseño de sus calles en forma de tablero de ajedrez, inspirado en los principios
+                                del
+                                Renacimiento italiano, la ciudad llegó a tener en más de dos siglos un número
+                                considerable de edificios civiles, religiosos y de carácter doméstico de suntuosas
+                                formas arquitectónicas.
+                                Uno de los mejores ejemplos de planificación urbana en la América del siglo XVI.
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </ng-template>
+    </div>
+
+    <div class="cards-projects container">
+        <div class="jumbotron p-5 rounded-5 border shadow-lg">
+            <div class="container-fluid py-4">
+                <h1 class="display-5 fw-bold">Proyectos</h1>
+                <p class="col-md-8 fs-5">Desde las místicas ruinas mayas de Tikal hasta la vibrante vida cultural de
+                    Antigua. Explora el majestuoso Lago de Atitlán, rodeado de pueblos únicos. Disfruta de playas
+                    tropicales
+                    en la costa caribeña o recorre los paisajes volcánicos que ofrecen vistas impresionantes. Cada
+                    rincón
+                    tiene algo especial que descubrir.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3">
+
+                    <a type="button" (click)="dialogOpen(content, mantenimiento, 'l')"
+                        tuiHint="Click en la imagen para ver mas" tuiHintDirection="top-left" tuiHintPointer>
+                        <div class="col">
+                            <div class="slide-container-custom">
+                                <div class="card card-cover h-100 overflow-hidden"
+                                    style="background-image: url('assets/images/proyectos/mant_1.jpg');">
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+                                        <h3 class="pt-3 mt-2 mb-4 display-6 lh-1">Proyecto #1</h3>
+                                        <ul class="d-flex list-unstyled mt-auto">
+                                            <li class="d-flex align-items-center me-0">
+                                                <svg class="bi me-2" width="1.7em" height="1.7em" fill="white">
+                                                    <use xlink:href="#logo" />
+                                                </svg>
+                                                <small class="smallTag">Mantenimiento de Computadoras</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a type="button" (click)="dialogOpen(content, maq_virtual, 'l')"
+                        tuiHint="Click en la imagen para ver mas" tuiHintDirection="top-left" tuiHintPointer>
+                        <div class="col">
+                            <div class="slide-container-custom">
+                                <div class="card card-cover h-100 overflow-hidden"
+                                    style="background-image: url('assets/images/proyectos/maq_3.jpg');">
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+                                        <h3 class="pt-2 mt-3 mb-4 display-6 lh-1 fw-bold">Proyecto #2
+                                        </h3>
+                                        <ul class="d-flex list-unstyled mt-auto">
+                                            <li class="d-flex align-items-center me-0">
+                                                <svg class="bi me-2" width="1.7em" height="1.7em" fill="white">
+                                                    <use xlink:href="#logo" />
+                                                </svg>
+                                                <small class="smallTag">Máquina Virtual</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a type="button" (click)="dialogOpen(content, red_lan, 'l')"
+                        tuiHint="Click en la imagen para ver mas" tuiHintDirection="top-left" tuiHintPointer>
+                        <div class="col">
+                            <div class="slide-container-custom">
+                                <div class="card card-cover h-100 overflow-hidden"
+                                    style="background-image: url('assets/images/proyectos/lan_3.png');">
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white">
+                                        <h3 class="pt-2 mt-3 mb-4 display-6 lh-1 fw-bold">Proyecto #3</h3>
+                                        <ul class="d-flex list-unstyled mt-auto">
+                                            <li class="d-flex align-items-center me-0">
+                                                <svg class="bi me-2" width="1.7em" height="1.7em" fill="white">
+                                                    <use xlink:href="#logo" />
+                                                </svg>
+                                                <small class="smallTag">Red LAN</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

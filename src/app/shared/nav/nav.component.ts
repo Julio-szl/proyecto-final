@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,5 +9,17 @@ import { RouterLink } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
+
+  scrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset = window.pageYOffset || document.documentElement.scrollTop;
+    this.scrolled = offset > 400;
+  }
+
+  ngOnInit() {
+    this.onWindowScroll();
+  }
 
 }
