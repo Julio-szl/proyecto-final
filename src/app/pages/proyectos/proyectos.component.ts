@@ -21,7 +21,7 @@ export class ProyectosComponent {
     }
   }
 
-  dialogs = inject(TuiDialogService);
+  private readonly dialogs = inject(TuiDialogService);
 
   protected dialogOpen(
     content: PolymorpheusContent<TuiDialogContext>,
@@ -32,7 +32,7 @@ export class ProyectosComponent {
       .open(content, {
         header,
         size,
-        closeable: false
+        closeable: false,
       })
       .subscribe();
   }

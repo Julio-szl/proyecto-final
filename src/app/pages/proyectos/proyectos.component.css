@@ -57,24 +57,24 @@
 
 /* -------------------Estilos para el carrusel--------------------- */
 .cards-projects {
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
-    margin: 0;
 }
 
 .jumbotron {
+    margin-left: 20rem;
+    margin-right: 20rem;
     margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
-.row {
-    display: inline-flex;
-    align-items: center;
+.cards-proyectos {
+    display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .slide-container-custom {
@@ -114,7 +114,6 @@ small.smallTag {
     display: block;
     height: 47rem;
     width: 100%;
-    background: transparent;
 }
 
 .carrusel-dialog {
@@ -133,7 +132,7 @@ small.smallTag {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-    filter: brightness(0.5);
+    filter: brightness(0.2);
     z-index: 1;
 }
 
@@ -170,4 +169,3 @@ small.smallTag {
 }
 
 /* -------------------Estilos para el carrusel--------------------- */
-

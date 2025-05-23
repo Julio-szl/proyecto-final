@@ -25,6 +25,7 @@ export class CarouselComponent implements AfterViewInit{
       const swiperOptions: SwiperOptions = {
         slidesPerView: 3,
         loop: true,
+        spaceBetween: 30,
         autoplay: true,
         breakpoints: {
           0: {
@@ -35,8 +36,13 @@ export class CarouselComponent implements AfterViewInit{
             slidesPerView: 2,
             spaceBetween: 20
           },
-          1366: {
+          1100: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1800: {
             slidesPerView: 3,
+            spaceBetween: 20
           }
         },
         virtual: {
