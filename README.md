@@ -1,27 +1,28 @@
-# ProyectoFinal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+# Proyecto Final | Angular 18
 
-## Development server
+Este repositorio contiene el portafolio web desarrollado como proyecto final para el curso "Introducción a los Sistemas de Cómputo". La página recopila todas las tareas, ejercicios y proyectos realizados durante el semestre, utilizando tecnologías modernas como Angular 18, Swiper, Taiga UI, Bootstrap y animaciones con TypeScript.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Ver Página](https://proyecto-final-134a1.web.app/home)
+## Integrantes
 
-## Build
+- [@Julio-szl](https://www.github.com/Julio-szl)
+- @Jairo
+- @Daniel
+- @Esdras
+- @Kenneth
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Badges
 
-## Running unit tests
+[![Angular](https://img.shields.io/badge/Angular-18-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://v18.angular.dev/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://v18.angular.dev/)
 
-## Running end-to-end tests
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[![Taiga UI](https://img.shields.io/badge/Taiga_UI-3.0-00AAFF?style=for-the-badge&logo=angular&logoColor=white)](https://taiga-ui.dev/)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[![Swiper Element](https://img.shields.io/badge/Swiper-11.0-6332F6?style=for-the-badge&logo=swiper&logoColor=white)](https://swiperjs.com/)
