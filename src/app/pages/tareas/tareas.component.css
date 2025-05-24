@@ -1,3 +1,69 @@
+/* -------------------Nav--------------------- */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    height: 45px;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 45px;
+}
+
+nav.scrolled .brand {
+    color: #000000;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: large;
+    display: inline-block;
+    line-height: 45px;
+}
+
+nav.scrolled .nav-links li a {
+    color: black;
+}
+
+/* -------------------Nav--------------------- */
+
 .header {
     height: 100vh;
     background-size: cover;
@@ -57,25 +123,25 @@
 
 /* -------------------Estilos para el carrusel--------------------- */
 .cards-projects {
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
-    align-items: center;
 }
 
 .jumbotron {
+    margin-left: 20rem;
+    margin-right: 20rem;
     margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
-/* .row {
-    display: inline-flex;
-    align-items: center;
+.cards-proyectos {
+    display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-} */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .slide-container-custom {
     display: block;
@@ -114,7 +180,6 @@ small.smallTag {
     display: block;
     height: 47rem;
     width: 100%;
-    background: transparent;
 }
 
 .carrusel-dialog {
@@ -133,7 +198,7 @@ small.smallTag {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.4);
-    filter: brightness(0.5);
+    filter: brightness(0.2);
     z-index: 1;
 }
 
@@ -170,4 +235,3 @@ small.smallTag {
 }
 
 /* -------------------Estilos para el carrusel--------------------- */
-

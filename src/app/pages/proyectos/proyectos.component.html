@@ -5,8 +5,25 @@
     </symbol>
 </svg>
 
-<nav>
-    <app-nav></app-nav>
+<nav [class.scrolled]="scrolled">
+    <div class="container">
+        <a class="brand" [routerLink]="['/']">Intr. Sistemas de Cómputo</a>
+        <ul class="nav nav-links">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/proyectos']"
+                    routerLinkActive="active">Proyectos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" [routerLink]="['/tareas']" routerLinkActive="active">Tareas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/videos']" routerLinkActive="active">Videos
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <div class="cover-container">
@@ -248,8 +265,7 @@
                             </div>
                             <div class="custom-text-dialog" data-swiper-parallax="-400"
                                 data-swiper-parallax-duration="600">
-                                <a class="text-decoration-none"
-                                    href="https://youtu.be/8FlHXYiaz1U?si=guG-ND27moVv0iju"
+                                <a class="text-decoration-none" href="https://youtu.be/8FlHXYiaz1U?si=guG-ND27moVv0iju"
                                     target="_blank">
                                     <button type="button" class="btn btn-outline-light fs-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
@@ -279,10 +295,14 @@
                             </div>
                             <div class="custom-text-dialog" data-swiper-parallax="-400"
                                 data-swiper-parallax-duration="600">
-                                <p>Las redes de área local desempeñan un papel fundamental en la conectividad de dispositivos dentro
-                                    de entornos geográficamente limitados, como oficinas, universidades, hospitales y hogares. Estas
-                                    redes permiten el intercambio eficiente de recursos, la comunicación entre sistemas y el acceso a
-                                    servicios compartidos, optimizando procesos tanto en el ámbito empresarial como en el
+                                <p>Las redes de área local desempeñan un papel fundamental en la conectividad de
+                                    dispositivos dentro
+                                    de entornos geográficamente limitados, como oficinas, universidades, hospitales y
+                                    hogares. Estas
+                                    redes permiten el intercambio eficiente de recursos, la comunicación entre sistemas
+                                    y el acceso a
+                                    servicios compartidos, optimizando procesos tanto en el ámbito empresarial como en
+                                    el
                                     doméstico.</p>
                             </div>
                         </div>
@@ -337,8 +357,7 @@
                             </div>
                             <div class="custom-text-dialog" data-swiper-parallax="-400"
                                 data-swiper-parallax-duration="600">
-                                <a class="text-decoration-none"
-                                    href="https://youtu.be/6SAZMppP2No?si=t1-Fej4XN7tTgJAN"
+                                <a class="text-decoration-none" href="https://youtu.be/6SAZMppP2No?si=t1-Fej4XN7tTgJAN"
                                     target="_blank">
                                     <button type="button" class="btn btn-outline-light fs-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"

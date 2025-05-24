@@ -1,18 +1,30 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
-import { NavComponent } from '../../shared/nav/nav.component';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject } from '@angular/core';
 import { TuiAppearance, TuiButton, TuiDialogContext, TuiDialogService, TuiDialogSize, TuiHint } from '@taiga-ui/core';
 import type { PolymorpheusContent } from '@taiga-ui/polymorpheus';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-proyectos',
   standalone: true,
-  imports: [NavComponent, TuiButton, TuiAppearance,
-    TuiHint],
+  imports: [TuiButton, TuiAppearance,
+    TuiHint, RouterLink],
   templateUrl: './proyectos.component.html',
   styleUrl: './proyectos.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProyectosComponent {
+
+  scrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset = window.pageYOffset || document.documentElement.scrollTop;
+    this.scrolled = offset > 400;
+  }
+
+  ngOnInit() {
+    this.onWindowScroll();
+  }
 
   scrollTo(id: string) {
     const section = document.getElementById(id);
