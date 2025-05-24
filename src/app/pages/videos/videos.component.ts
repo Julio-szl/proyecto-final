@@ -1,13 +1,11 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener, inject } from '@angular/core';
-import { TuiAppearance, TuiButton, TuiDialogContext, TuiDialogService, TuiDialogSize, TuiHint } from '@taiga-ui/core';
-import type { PolymorpheusContent } from '@taiga-ui/polymorpheus';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, HostListener } from '@angular/core';
+import { TuiHint } from '@taiga-ui/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-videos',
   standalone: true,
-  imports: [TuiButton, TuiAppearance,
-    TuiHint, RouterLink],
+  imports: [TuiHint, RouterLink],
   templateUrl: './videos.component.html',
   styleUrl: './videos.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
